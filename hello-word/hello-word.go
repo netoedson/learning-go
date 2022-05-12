@@ -14,11 +14,16 @@ type person struct {
 	age      int
 }
 
+// untyped constant
+const max = 10
+
 func main() {
 	fmt.Println("Hello World!")
 
 	// the type is assigned based on the literal type value
 	value := 10
+
+	fmt.Println("Using a constant to multiply a value: ", value*max)
 
 	// Printing the type and the value
 	fmt.Printf("%T - %v\n", value, value)
